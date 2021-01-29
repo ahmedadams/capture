@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;900&display=swap');
+@import "reset";
+
+
+html {
+   background: linear-gradient(
+    rgba(0, 0, 0, .8),rgba(0, 0, 0, .8)
+    ), url('https://i.imgur.com/VeZ8eCN.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+@import "home";
+
+// Footer section 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #000000;
+  width: 100%;
+  padding: 35px 0;
+  overflow: hidden;
+  .footer-logo {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}

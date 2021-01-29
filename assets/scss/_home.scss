@@ -1,0 +1,296 @@
+
+// Hero section
+
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	.content-hero {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		// padding: 30px;
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 1.5rem;
+			font-weight: 400;
+			font-variant: small-caps;
+			color: white;
+			text-transform: uppercase;
+			margin: 0;
+			text-align: center;
+			.fa {
+				font-size: 2.5rem;
+				margin-right: 10px;
+			}
+		}
+		.header {
+			// display: flex;
+			// justify-content: center;
+			// align-items: center;
+			font-size: 5rem;
+			font-weight: 300;
+			color: white;
+			text-transform: uppercase;
+			margin-top: 6rem;
+			text-align: center;
+			.header_text {
+				display: block;
+				margin-bottom: 1.8rem;
+			}	
+		}
+		.sub-heading {
+			// display: flex;
+			// justify-content: center;
+			// align-items: center;
+			text-align: center;
+			font-size: 1.3rem;
+			font-weight: 300;
+			color: #cccccb;
+			margin-top: 2rem;
+			.text {
+				max-width: 700px;
+				line-height: 30px	
+			}
+		}
+		.btn-book {
+			color: #000001;
+			background-color: white;
+			width: 180px;
+			padding: 12px;
+			text-align: center;
+			font-size: 1.4rem;
+			font-weight: 300;
+			text-transform: uppercase;
+			margin-top: 2rem;
+			transition: all .3s ease-in-out;
+			&:hover {
+				cursor: pointer;
+				background-color: #1d1e1d;
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+
+// Card section
+
+.card {
+	background-color: #000000;
+	width: 100%;
+	min-height: 65vh;
+	overflow: hidden;
+	.content-card {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		// grid-template-rows: 50vh;
+		padding: 80px;
+		.terms-info {
+			// padding-right: 30px;
+			padding: 41px 30px 30px 0; 
+			.heading-top, .heading-bottom {
+				color: white;
+				font-size: 3rem;
+				font-weight: 300;
+				text-transform: uppercase;
+				text-align: right;
+				line-height: 60px;
+			}
+			.heading-bottom {
+				margin-bottom: 50px;
+			}
+			.underline {
+				background: #ffffff;
+				height: 1px;
+				width: 180px;
+				text-align: right;
+				margin-left: auto;
+				margin-bottom: 50px;
+			}
+			.dates-info-top, .dates-info-bottom, .deadline-info {
+				font-size: 1.2rem;
+				font-weight: 300;
+				text-align: right;
+				color: #ffffff;
+				text-transform: uppercase;
+				line-height: 30px;
+			}
+			.deadline-info {
+				line-height: 90px;
+			}
+		}
+		.card-info {
+			padding: 30px;
+			.container-list {
+				background-color: #fafafa;
+				border: 10px solid #d8dadb;
+				border-radius: 5px;
+				padding: 35px 20px 40px 20px;
+				transition: all 0.2s;
+  				box-shadow: 0 0.5rem 1rem 0 rgba(255, 255, 255, 0.1);
+  				&:hover {
+  					margin-top: -.25rem;
+				    margin-bottom: .25rem;
+				    box-shadow: 0 0.5rem 1rem 0 rgba(255, 255, 255, 0.3);
+  				}
+				.title {
+					color: #000000;
+					font-size: 1.8rem;
+					font-weight: 400;
+					text-transform: uppercase;
+					padding: 15px 20px 20px 20px;
+					text-align: left;
+				}
+				.session-list {
+					padding: 15px 20px 20px 20px;
+					.session-item {
+						font-size: 1.1rem;
+						font-weight: 300;
+						text-transform: capitalize;
+						color: #000000;
+						padding: 0 0 20px 0; 
+						.fa {
+							margin-right: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Horizontal Section
+.horizontal-section {
+	width: 100%;
+	min-height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+	  .text {
+		font-size: 3.5rem;
+		font-weight: 300;
+		color: #ffffff;
+		text-align: center;
+		line-height: 60px;
+		text-transform: uppercase;
+		.first-part, .second-part{
+			display: block;
+			// margin-bottom: 1rem;
+		}
+
+	}
+	.btn-last {
+		color: #000001;
+		background-color: white;
+		width: 200px;
+		padding: 12px 20px;
+		text-align: center;
+		font-size: 1.4rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		margin-top: 2rem;
+		transition: all .3s ease-in-out;
+		&:hover {
+			cursor: pointer;
+			background-color: #1d1e1d;
+			color: white;
+		}
+	}
+}
+
+
+
+// Media queries
+
+// For Small screen sizes
+@media (min-width: 0px) and (max-width: 767px){
+	.content-hero {
+		padding: 20px;
+		.logo {
+			margin: 1rem 0;
+		}
+		.header {
+			margin-top: 2rem !important;
+			.header_text {
+				font-size: 2.9rem;
+				margin-bottom: 0 !important;
+				line-height: 65px;
+			}
+		}
+		.sub-heading {
+			font-size: 1rem !important;
+		}
+		.btn-book {
+			font-size: 1.1rem !important;
+		}
+	}
+	.card {
+		.content-card {
+			grid-template-columns: 1fr;
+			padding: 20px;
+			.terms-info {
+				padding: 18px;
+				.heading-top, .heading-bottom {
+					font-size: 2rem;
+				}
+				.dates-info-top, .dates-info-bottom,
+				 .deadline-info {
+				 	font-size: 1rem;
+				 }
+				 .deadline-info {
+				 	line-height: 30px;
+				 }
+			}
+			.card-info {
+				padding: 0;
+				.container-list {
+					padding: 0;
+					.title {
+						padding: 5px;
+						font-size: 1.3rem;
+					}
+					.session-list {
+						padding: 5px;
+						.session-item {
+							font-size: 1rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	.horizontal-section {
+		.text {
+			font-size: 2rem;
+		}
+		.btn-last {
+			width: 180px;
+			font-size: 1.3rem;
+		}
+	}
+}
+// For Meduim screen sizes
+@media (min-width: 768px) and (max-width: 991px) {
+	.card {
+		.content-card {
+			grid-template-columns: 1fr;
+			padding: 50px;
+		}
+	}
+
+		.horizontal-section {
+		.text {
+			font-size: 2.6rem;
+		}
+	}
+}
